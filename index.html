@@ -40,6 +40,41 @@
             border-radius: 5px;
         }
 
+        .simulator-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .simulator-controls button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.25s ease;
+            min-width: 130px;
+        }
+
+        .simulator-controls button:hover {
+            background-color: #1b5e20;
+        }
+
+        .simulator-controls button:disabled {
+            opacity: 0.65;
+            cursor: not-allowed;
+            background-color: #7cae7a;
+        }
+
+        .note {
+            text-align: center;
+            margin-top: 15px;
+            color: #444;
+        }
+
         .container {
             max-width: 1100px;
             margin: 20px auto;
@@ -123,6 +158,39 @@
             </p>
         </section>
 
+        <section id="fazendeiro" class="banner">
+            <h2>Simulador do Fazendeiro</h2>
+            <p>Controle a fazenda com ações de plantio, irrigação, colheita e descanso para manter a produção sustentável.</p>
+            <div class="dashboard">
+                <div class="card">
+                    <h3>Energia do Fazendeiro</h3>
+                    <div class="dado-importante" id="energia-fazendeiro">80%</div>
+                    <p id="status-fazendeiro">Fazendeiro pronto para trabalhar</p>
+                </div>
+
+                <div class="card">
+                    <h3>Crescimento das Plantas</h3>
+                    <div class="dado-importante" id="crescimento-planta">30%</div>
+                    <p id="status-plantas">As plantas estão começando a crescer</p>
+                </div>
+
+                <div class="card">
+                    <h3>Água do Solo</h3>
+                    <div class="dado-importante" id="agua-solo">65%</div>
+                    <p id="status-agua">Solo em condições ideais</p>
+                </div>
+            </div>
+
+            <div class="simulator-controls">
+                <button id="botao-regar">Regar</button>
+                <button id="botao-plantar">Plantio</button>
+                <button id="botao-colher">Colher</button>
+                <button id="botao-descansar">Descansar</button>
+            </div>
+
+            <p class="note">Colheitas realizadas: <span id="colheita-contador">0</span></p>
+        </section>
+
         <section id="painel">
             <h2>Painel de Monitoramento em Tempo Real</h2>
             <p>Abaixo estão os dados coletados diretamente pelos sensores do protótipo no solo:</p>
@@ -161,8 +229,9 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 - Desenvolvido por Aluno do 1º Ano do Ensino Médio para o Concurso Agrinho.</p>
+        <p>&copy; 2026 - Desenvolvido por Yuri Henrique para o Concurso Agrinho.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
