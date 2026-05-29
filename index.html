@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte & Sustentável - Irrigador Inteligente</title>
+    <style>
+        /* Estilização básica para o site ficar bonito e organizado */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32; /* Verde sustentável */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1b5e20;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #2e7d32;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .banner {
+            background-color: #e8f5e9;
+            border-left: 5px solid #2e7d32;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        /* Estilo do Dashboard (Painel do Irrigador) */
+        .dashboard {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #2e7d32;
+        }
+
+        .dado-importante {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1b5e20;
+            margin: 15px 0;
+        }
+
+        .status-ativo {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte e Sustentável</h1>
+        <p>Concurso Agrinho 2026 | Equilíbrio entre Produção e Meio Ambiente</p>
+    </header>
+
+    <nav>
+        <a href="#projeto">O Projeto</a>
+        <a href="#painel">Monitoramento</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="projeto" class="banner">
+            <h2>Irrigador Automatizado de Precisão</h2>
+            <p>
+                Nosso projeto une a tecnologia de automação (Arduino/ESP32) com a necessidade urgente de poupar recursos hídricos. 
+                Através de sensores de umidade, o sistema só aciona a rega quando o solo realmente necessita, garantindo a máxima 
+                produtividade com o menor impacto ambiental.
+            </p>
+        </section>
+
+        <section id="painel">
+            <h2>Painel de Monitoramento em Tempo Real</h2>
+            <p>Abaixo estão os dados coletados diretamente pelos sensores do protótipo no solo:</p>
+            
+            <div class="dashboard">
+                <div class="card">
+                    <h3>Umidade do Solo</h3>
+                    <div class="dado-importante">65%</div>
+                    <p>Status: Solo Ideal</p>
+                </div>
+
+                <div class="card">
+                    <h3>Status da Bomba</h3>
+                    <div class="dado-importante status-ativo">DESLIGADA</div>
+                    <p>Água preservada no reservatório</p>
+                </div>
+
+                <div class="card">
+                    <h3>Economia de Água</h3>
+                    <div class="dado-importante" style="color: #0288d1;">35%</div>
+                    <p>Comparado à irrigação comum</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sustentabilidade" style="background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2>O Equilíbrio na Prática</h2>
+            <p>
+                Para que o agronegócio continue forte, ele precisa ser sustentável. A agricultura de precisão, representada por 
+                este irrigador inteligente, mostra que o uso da tecnologia no campo não serve apenas para aumentar os lucros, 
+                mas também para proteger a biodiversidade, evitar o esgotamento dos solos e garantir a segurança hídrica das 
+                próximas gerações.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Aluno do 1º Ano do Ensino Médio para o Concurso Agrinho.</p>
+    </footer>
+
+</body>
+</html>
